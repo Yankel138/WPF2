@@ -51,7 +51,7 @@ namespace WPF2
                 }
                 text = "";
             }
-            else
+            else if (text != "")
             {
                 Button_Click_Ravno(sender, e);
             }
@@ -145,12 +145,12 @@ namespace WPF2
         }
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
-            //(sender as Button).Background = Color.;
+            (sender as Button).FontSize = 24;
         }
 
         private void Button_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            (sender as Button).FontSize = 18;
         }
 
 
